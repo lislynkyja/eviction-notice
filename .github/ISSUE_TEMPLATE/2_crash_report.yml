@@ -1,0 +1,66 @@
+name: Crash report
+description: The game or server crashed, or won't start.
+labels: ["crash"]
+body:
+  - type: textarea
+    id: crash-report
+    attributes:
+      label: Crash report
+      description: Upload the newest file from crash-reports/ (or logs/latest.log if there is none) to https://mclo.gs and paste the link here, or drag the file into this box.
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What were you doing when it crashed?
+      description: For example starting the game, joining the world, running a command, or walking near a village.
+    validations:
+      required: true
+  - type: input
+    id: mod-version
+    attributes:
+      label: Eviction Notice version
+      description: The jar name is fine, e.g. eviction-notice-1.2.0+26.1-26.3.jar
+    validations:
+      required: true
+  - type: input
+    id: mc-version
+    attributes:
+      label: Minecraft version
+      placeholder: "26.3"
+    validations:
+      required: true
+  - type: input
+    id: loader-version
+    attributes:
+      label: Fabric Loader and Fabric API versions
+      placeholder: Loader 0.19.5, Fabric API 0.160.5+26.3
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Where does it happen?
+      options:
+        - Singleplayer
+        - LAN
+        - Dedicated server
+    validations:
+      required: true
+  - type: textarea
+    id: mods
+    attributes:
+      label: Other mods
+      description: Your mod list, or the name of the modpack and its version. Write "none" if it's only Eviction Notice and Fabric API.
+    validations:
+      required: true
+  - type: dropdown
+    id: only-en
+    attributes:
+      label: Does it also crash with only Eviction Notice and Fabric API installed?
+      options:
+        - "Yes"
+        - "No"
+        - Haven't tried
+    validations:
+      required: true

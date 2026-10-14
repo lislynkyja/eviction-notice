@@ -1,0 +1,9 @@
+name: Something else
+description: Anything that doesn't fit above, like modpack questions or feedback.
+body:
+  - type: textarea
+    id: message
+    attributes:
+      label: What's on your mind?
+    validations:
+      required: true

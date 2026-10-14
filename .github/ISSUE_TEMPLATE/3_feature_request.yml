@@ -1,0 +1,17 @@
+name: Feature idea
+description: Something you'd like the mod to do.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why?
+      description: What are you trying to do in your world or on your server?
+    validations:
+      required: false
