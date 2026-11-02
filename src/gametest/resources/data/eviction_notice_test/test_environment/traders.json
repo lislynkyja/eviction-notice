@@ -1,0 +1,4 @@
+{
+  "type": "eviction_notice_test:config",
+  "affect_wandering_traders": true
+}

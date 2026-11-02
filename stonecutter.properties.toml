@@ -1,0 +1,22 @@
+# Mod and dependency versions. The top part applies to every jar, each [table] to one target
+# from settings.gradle.kts.
+mod.id = "eviction_notice"
+mod.version = "1.3.0"
+mod.group = "com.evictionnotice"
+mod.archives_name = "eviction-notice"
+
+# Fabric Loader for dev runs. Players need mod.loader_min or newer.
+deps.fabric_loader = "0.19.5"
+
+["26.1"]
+# Shown in the version and jar name. It covers the whole range, so players on 26.3 don't think
+# the jar is only for 26.1.
+mod.mc_label = "26.1-26.3"
+mod.mc_compat = ">=26.1 <26.4"
+# Versions listed on Modrinth.
+mod.mc_releases = ["26.1", "26.1.1", "26.1.2", "26.2", "26.3"]
+# What Fabric API needs on 26.1.
+mod.loader_min = "0.18.4"
+mod.java = 25
+
+deps.fabric_api = "0.145.1+26.1"

@@ -1,0 +1,21 @@
+{
+	"schemaVersion": 1,
+	"id": "eviction_notice_test",
+	"version": "1.0.0",
+	"name": "Eviction Notice GameTests",
+	"description": "Server-side GameTests for automated testing via CI and local testing, acting as a last check before publishing.",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.evictionnotice.test.EvictionTestMod"
+		],
+		"fabric-gametest": [
+			"com.evictionnotice.test.EvictionGameTests",
+			"com.evictionnotice.test.ConfigTests"
+		]
+	},
+	"depends": {
+		"eviction_notice": "*",
+		"fabric-gametest-api-v1": "*"
+	}
+}

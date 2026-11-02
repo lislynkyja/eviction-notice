@@ -1,0 +1,13 @@
+{
+	"required": true,
+	"package": "com.evictionnotice.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"mixins": [
+		"WalkNodeEvaluatorMixin",
+		"PoiManagerMixin"
+	],
+	"client": []
+}

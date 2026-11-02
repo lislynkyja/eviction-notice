@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "eviction_notice",
+	"version": "${version}",
+	"name": "Eviction Notice",
+	"description": "Keep villagers out of your house without iron doors. This mod lets you define a zone around your house that keeps villagers away and forces them to leave your beds and workstations alone.",
+	"authors": [
+		"Lislyn Kyja"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/eviction-notice",
+		"issues": "https://github.com/lislynkyja/eviction-notice/issues",
+		"sources": "https://github.com/lislynkyja/eviction-notice"
+	},
+	"license": "MIT",
+	"icon": "assets/eviction_notice/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.evictionnotice.EvictionNotice"
+		]
+	},
+	"mixins": [
+		"eviction_notice.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=${loader}",
+		"minecraft": "${minecraft}",
+		"java": ">=${java}",
+		"fabric-api": "*"
+	}
+}
