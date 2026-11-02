@@ -26,12 +26,12 @@
 ## Features
 
 - Villagers walk around your zone instead of through it
-- Beds and workbench blocks within a zone cannot be claimed
+- Beds and workstation blocks within a zone cannot be claimed
 - Villagers inside the zone are teleported out
 - Optional height limit for the zone to accommodate basements or individual floors
 - Each player has their own zones
-- Server-side only: Players joining the server do not need the mod to use it
-- Mobs affected by the zone are partially configurable
+- Server-side only: players joining the server do not need the mod to use it
+- Mobs affected by the zone are configurable: zombie villagers, iron golems and wandering traders
 
 
 ## Installation
